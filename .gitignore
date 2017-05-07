@@ -1,0 +1,4 @@
+*.log
+*.d.ts
+/dist
+/node_modules
