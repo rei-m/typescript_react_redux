@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Todo, { Props as TodoProps } from './Todo';
 
-export interface Props {
+export interface Props extends React.Props<{}> {
   todos: TodoProps[];
   onTodoClick: (id: number) => void;
 }

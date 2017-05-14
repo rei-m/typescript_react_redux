@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface Props {
+export interface Props extends React.Props<{}> {
   onSubmit: (name: string) => void;
 }
 

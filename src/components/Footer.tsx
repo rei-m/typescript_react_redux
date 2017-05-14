@@ -15,7 +15,7 @@ const Footer = (): JSX.Element => (
     {', '}
     <FilterLink filter="SHOW_COMPLETED">
       Completed
-    </FilterLink>
+    </FilterLink>ss
   </p>
 );
 

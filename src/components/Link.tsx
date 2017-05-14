@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { Props as FilterLinkProps } from '../containers/FilterLink';
 
-export interface Props {
+export interface Props extends React.Props<{}> {
   active: boolean;
-  children: JSX.Element;
   onClick: () => void;
 }
 
