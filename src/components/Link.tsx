@@ -18,7 +18,7 @@ const Link = (props: Props & FilterLinkProps): JSX.Element => {
   };
 
   return (
-    <a href="#" onClick={handleOnClick}>
+    <a href='#' onClick={handleOnClick}>
       {props.children}
     </a>
   );

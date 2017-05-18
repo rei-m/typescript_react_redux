@@ -6,11 +6,6 @@ import { GlobalState } from '../reducers/index';
 export interface Props {
 }
 
-const mapStateToProps = (state: GlobalState, props: Props) => {
-  return {
-  };
-};
-
 const mapDispatchToProps = (dispatch: Dispatch<GlobalState>, props: Props) => {
   return {
     onSubmit: (name: string) => {
@@ -20,7 +15,7 @@ const mapDispatchToProps = (dispatch: Dispatch<GlobalState>, props: Props) => {
 };
 
 const AddTodo = connect(
-  mapStateToProps,
+  undefined,
   mapDispatchToProps,
 )(AddTodoForm);
 

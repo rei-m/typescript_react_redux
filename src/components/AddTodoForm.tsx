@@ -25,10 +25,10 @@ const AddTodoForm = (props: Props): JSX.Element => {
     <div>
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
+          type='text'
           ref={setTextInput}
         />
-        <button type="submit">
+        <button type='submit'>
           Add Todo
         </button>
       </form>

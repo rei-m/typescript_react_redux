@@ -21,10 +21,12 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
+        exclude: /node_modules/,
         loader: 'awesome-typescript-loader'
       },
       {
-        test: /\.ts(x?)$/,
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
         enforce: 'pre',
         loader: 'tslint-loader'
       },
