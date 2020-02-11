@@ -8,7 +8,6 @@ export interface Props extends React.Props<{}> {
 }
 
 const Todo = (props: Props): JSX.Element => {
-
   const style = {
     textDecoration: props.completed ? 'line-through' : 'none',
   };
@@ -18,10 +17,7 @@ const Todo = (props: Props): JSX.Element => {
   };
 
   return (
-    <li
-      onClick={handleOnClick}
-      style={style}
-    >
+    <li onClick={handleOnClick} style={style}>
       {props.text}
     </li>
   );

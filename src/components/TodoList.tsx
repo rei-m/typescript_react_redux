@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Todo, { Props as TodoProps } from './Todo';
 
 export interface Props extends React.Props<{}> {
@@ -7,20 +7,11 @@ export interface Props extends React.Props<{}> {
 }
 
 const TodoList = (props: Props): JSX.Element => {
+  const todoElements = props.todos.map(todo => (
+    <Todo key={todo.id} {...todo} onClick={props.onTodoClick} />
+  ));
 
-  const todoElements = props.todos.map((todo) =>
-    <Todo
-      key={todo.id}
-      {...todo}
-      onClick={props.onTodoClick}
-    />,
-  );
-
-  return (
-    <ul>
-      {todoElements}
-    </ul>
-  );
+  return <ul>{todoElements}</ul>;
 };
 
 export default TodoList;

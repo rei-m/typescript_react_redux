@@ -10,10 +10,10 @@
     "strictNullChecks": true,
     "lib": ["es2017", "dom"],
     "target": "es5",
-    "removeComments": true
+    "removeComments": true,
+    "esModuleInterop": true,
   },
   "exclude": [
     "node_modules",
-    "typings"
   ]
 }
